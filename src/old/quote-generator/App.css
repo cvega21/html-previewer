@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+
+.QuoteApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+
+.Signature {
+  
+}
+
+.BoxAndTweet {
+  display: flex;
+
+  align-items: flex-start;
+  width: fit-content;
+  margin: 50px 0px 0px 0px;
+}
+
+.QuoteBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+.QuoteText {
+  background-color: #057eff;
+  color:beige;
+  padding: 6px 6px 6px 10px;
+  border-radius: 10px;
+  max-width: fit-content;
+}
+
+.QuoteAuthor {
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+}
+
+.Twitter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NewQuote {
+  
+}
+
+#new-quote {
+  width: fit-content;
+  align-self: center;
+  justify-self: center;
+}

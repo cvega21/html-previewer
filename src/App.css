@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.appContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textInputContainer {
+  width: 500px;
+  height: 1050px;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.textInputRaw, .textInputHighlighted {
+  position: absolute;
+  top: 150px;
+  width: 500px;
+  height: 1000px;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  box-shadow: 5px 5px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textInputRaw {
+  z-index: 1;
+  color: transparent;
+  background-color: transparent;
+  margin: 0px;
+  padding: 5px;
+  width: 490px;
+  height: 990px;
+}
+
+.textInputHighlighted {
+  margin: 0px;
+  z-index: -1;
+  background-color: black;
+  width: 490px;
+  height: 990px;
+  overflow-y: auto;
+}
+
+.textOutputContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.textOutput {
+  background-color: rgb(234, 247, 255);
+  width: 490px;
+  height: 990px;
+  margin-top: 50px;
+  box-shadow: 5px 5px 15px;
+  padding: 10px;
+}
+
+.textInputContainer, .textOutputContainer > h1 {
+  margin-top: 40px
 }
